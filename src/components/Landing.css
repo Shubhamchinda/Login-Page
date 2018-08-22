@@ -1,5 +1,17 @@
 .header-image {
 	width: 100%;
 	margin-top: -2em;
-	margin-bottom: 2em;
+}
+.container {
+    position: relative;
+    width: 100%;
+    }
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
