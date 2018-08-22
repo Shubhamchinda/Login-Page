@@ -5,13 +5,13 @@ import 'firebase/database';
 
 
 const config = {
-    apiKey: "AIzaSyBqkiwmZmqFz9yS59qW-D5K0qShnC02nD4",
-    authDomain: "reactjs-login-page.firebaseapp.com",
-    databaseURL: "https://reactjs-login-page.firebaseio.com",
-    projectId: "reactjs-login-page",
-    storageBucket: "reactjs-login-page.appspot.com",
-    messagingSenderId: "792843114904"
-  };
+  apiKey: 'AIzaSyBUUaByENtH-QWL3w1AIW1rcjXeQo4_aXE',
+  authDomain: 'filmy-profiles.firebaseapp.com',
+  databaseURL: 'https://filmy-profiles.firebaseio.com',
+  projectId: 'filmy-profiles',
+  storageBucket: 'filmy-profiles.appspot.com',
+  messagingSenderId: '82052180042'
+};
 
 if(!firebase.apps.length) {
   firebase.initializeApp(config);

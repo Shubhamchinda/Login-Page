@@ -76,7 +76,7 @@ class SignInForm extends Component {
       <div className="wrapper">
       <form onSubmit={this.onSubmit}>
       <div class="row">
-      <div class="col-sm-4 col-sm-offset-4">
+      <div class="col-sm-4 col-sm-offset-4 person-wrapper">
       <div className="form-group">
         <Row className= "show-grid text-center">
         <input className="form-control"
@@ -89,7 +89,7 @@ class SignInForm extends Component {
         </div>
         </div>
         <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
+          <div class="col-sm-4 col-sm-offset-4 person-wrapper">
           <div className="form-group">
         <Row className= "show-grid text-center">
         <input className="form-control"
@@ -103,7 +103,7 @@ class SignInForm extends Component {
           </div>
           </div>
         <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-sm-4 col-sm-offset-4 person-wrapper">
         <div className="form-group">
         <Row className= "show-grid text-center">
         <button disabled={isInvalid} type="submit" className="btn btn-default hover">
