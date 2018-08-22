@@ -9,7 +9,7 @@ import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
 const SignInPage = ({ history }) =>
   <div>
   <Row className= "show-grid text-center" >
-    <h1>SignIn</h1>
+    <h1>Sign In</h1>
       <SignInForm history={history} />
     <div>
       <PasswordForgetLink />
