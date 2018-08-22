@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AuthUserContext from './AuthUserContext';
 import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import './Navigation.css';
+
 
 const Navigation = () =>
   <AuthUserContext.Consumer>
@@ -13,17 +16,50 @@ const Navigation = () =>
   </AuthUserContext.Consumer>
 
 const NavigationAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.HOME}>Home</Link></li>
-    <li><Link to={routes.ACCOUNT}>Account</Link></li>
-    <li><SignOutButton /></li>
-  </ul>
+  <Navbar default collapseOnSelect>
+    <Navbar.Header>
+      <Navbar.Brand>
+          <Link to={routes.LANDING}>Landing</Link>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav pullRight>
+        <NavItem eventKey={1}>
+        <Link to={routes.LANDING}>LANDING</Link>
+        </NavItem>
+        <NavItem eventKey={2}>
+        <Link to={routes.HOME}>HOME</Link>
+        </NavItem>
+        <NavItem eventKey={3}>
+        <Link to={routes.ACCOUNT}>ACCOUNT</Link>
+        </NavItem>
+        <NavItem eventKey={4} >
+        <SignOutButton />
+        </NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+
 
 const NavigationNonAuth = () =>
-  <ul>
-    <li><Link to={routes.LANDING}>Landing</Link></li>
-    <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-  </ul>
+<Navbar default collapseOnSelect>
+  <Navbar.Header>
+    <Navbar.Brand>
+        <Link to={routes.LANDING}>LANDING</Link>
+    </Navbar.Brand>
+    <Navbar.Toggle />
+  </Navbar.Header>
+  <Navbar.Collapse>
+    <Nav pullRight>
+      <NavItem eventKey={1}>
+      <Link to={routes.LANDING}>LANDING</Link>
+      </NavItem>
+      <NavItem eventKey={2}>
+      <Link to={routes.SIGN_IN}>SIGN IN</Link>
+      </NavItem>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
 
 export default Navigation;

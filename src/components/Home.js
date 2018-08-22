@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
+import { Jumbotron, Grid, Col, Button } from 'react-bootstrap';
 import withAuthorization from './withAuthorization';
 import { db } from '../firebase';
 
@@ -22,12 +23,14 @@ class HomePage extends Component {
     const { users } = this.state;
 
     return (
-      <div>
-        <h1>Home</h1>
+      <Grid>
+      <Jumbotron>
+        <h1>Welcome!</h1>
         <p>The Home Page is accessible by every signed in user.</p>
 
         { !!users && <UserList users={users} /> }
-      </div>
+        </Jumbotron>
+      </Grid>
     );
   }
 }

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Navbar, Nav, NavItem, } from 'react-bootstrap'
 
 const LandingPage = () =>
-  <div>
+
+  <div className="text-center">
     <h1>Landing Page</h1>
   </div>
 
