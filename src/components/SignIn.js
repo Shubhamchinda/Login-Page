@@ -71,6 +71,9 @@ class SignInForm extends Component {
       email === '';
 
     return (
+      <div className="section">
+      <div className="container">
+      <div className="wrapper">
       <form onSubmit={this.onSubmit}>
       <div class="row">
       <div class="col-sm-4 col-sm-offset-4">
@@ -113,6 +116,9 @@ class SignInForm extends Component {
         </div>
         </div>
       </form>
+      </div>
+      </div>
+      </div>
     );
   }
 }
