@@ -9,12 +9,14 @@ import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
 const SignInPage = ({ history }) =>
   <div>
   <Row className= "show-grid text-center" >
-
     <h1>SignIn</h1>
-    <SignInForm history={history} />
-    <PasswordForgetLink />
-    <SignUpLink />
-
+      <SignInForm history={history} />
+    <div>
+      <PasswordForgetLink />
+    </div>
+    <div>
+      <SignUpLink />
+    </div>
     </Row>
   </div>
 
@@ -70,34 +72,46 @@ class SignInForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-      <Row className= "show-grid text-center">
-      <Col xs={12} sm={12} className="pwerson-wrapper">
-        <input
+      <div class="row">
+      <div class="col-sm-4 col-sm-offset-4">
+      <div className="form-group">
+        <Row className= "show-grid text-center">
+        <input className="form-control"
           value={email}
           onChange={event => this.setState(byPropKey('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
-        </Col>
-        </Row>
+          </Row>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+          <div className="form-group">
         <Row className= "show-grid text-center">
-        <Col xs={12} sm={12} className="pwerson-wrapper">
-        <input
+        <input className="form-control"
           value={password}
           onChange={event => this.setState(byPropKey('password', event.target.value))}
           type="password"
           placeholder="Password"
         />
-        </Col>
         </Row>
+          </div>
+          </div>
+          </div>
+        <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+        <div className="form-group">
         <Row className= "show-grid text-center">
-        <Col xs={12} sm={12} className="pwerson-wrapper">
         <button disabled={isInvalid} type="submit" className="btn btn-default hover">
           Sign In
         </button>
-        </Col>
         </Row>
+        </div>
         { error && <p>{error.message}</p> }
+        </div>
+        </div>
+        </div>
       </form>
     );
   }

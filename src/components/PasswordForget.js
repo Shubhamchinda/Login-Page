@@ -5,8 +5,12 @@ import { auth } from '../firebase';
 
 const PasswordForgetPage = () =>
   <div>
-    <h1>PasswordForget</h1>
-    <PasswordForgetForm />
+    <div className="text-center form-group">
+      <h1>PasswordForget</h1>
+    </div>
+    <div className="row form-group">
+      <PasswordForgetForm />
+    </div>
   </div>
 
 const byPropKey = (propertyName, value) => () => ({
@@ -49,15 +53,23 @@ class PasswordForgetForm extends Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-        <input
+      <div className="row">
+        <div className="col-sm-4 text-center col-sm-offset-4 form-group">
+        <input className="form-control"
           value={this.state.email}
           onChange={event => this.setState(byPropKey('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
-        <button disabled={isInvalid} type="submit">
-          Reset My Password
-        </button>
+        </div>
+      </div>
+        <div className="row">
+          <div className="col-sm-4 text-center col-sm-offset-4 form-group">
+            <button disabled={isInvalid} type="submit" className="btn btn-default hover">
+            Reset My Password
+            </button>
+          </div>
+        </div>
 
         { error && <p>{error.message}</p> }
       </form>

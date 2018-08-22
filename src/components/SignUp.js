@@ -11,9 +11,10 @@ import * as routes from '../constants/routes';
 const SignUpPage = ({ history }) =>
   <div>
   <Row className= "show-grid text-center" >
-
     <h1>SignUp</h1>
+    <div className="row">
     <SignUpForm history={history}/>
+    </div>
     </Row>
   </div>
 
@@ -83,54 +84,67 @@ class SignUpForm extends Component {
 
 		return (
 		<form onSubmit={this.onSubmit}>
+    <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+    <div className="form-group">
     <Row className= "show-grid text-center">
-    <Col xs={12} sm={12} className="pwerson-wrapper">
-		<input
+		<input className="form-control"
 			value = {username}
 			onChange = {event => this.setState(byPropKey('username',event.target.value))}
 			type="text"
 			placeholder = "Full Name"
 		/>
-    </Col>
     </Row>
-    <Row className= "show-grid text-center">
-    <Col xs={12} sm={12} className="pwerson-wrapper">
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+    <Row className= "show-grid text-center form-group">
 		<input className="form-control"
 			value={email}
 			onChange={event => this.setState(byPropKey('email', event.target.value))}
 			type = "text"
 			placeholder = "Email Address"
 		/>
-    </Col>
     </Row>
-    <Row className= "show-grid text-center">
-    <Col xs={12} sm={12} className="pwerson-wrapper">
-		<input
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+    <Row className= "show-grid text-center form-group">
+		<input className="form-control"
           value={passwordOne}
           onChange={event => this.setState(byPropKey('passwordOne', event.target.value))}
           type="password"
           placeholder="Password"
         />
-        </Col>
         </Row>
-        <Row className= "show-grid text-center">
-        <Col xs={12} sm={12} className="pwerson-wrapper">
-        <input
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+        <Row className= "show-grid text-center form-group">
+        <input className="form-control"
           value={passwordTwo}
           onChange={event => this.setState(byPropKey('passwordTwo', event.target.value))}
           type="password"
           placeholder="Confirm Password"
         />
-        </Col>
         </Row>
-        <Row className= "show-grid text-center">
-        <Col xs={12} sm={12} className="pwerson-wrapper">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+        <Row className= "show-grid text-center form-group">
         <button disabled={isInvalid} type="submit" className='btn btn-default hover'>
           Sign Up
         </button>
-        </Col> </Row>
+        </Row>
 
         { error && <p>{error.message}</p> }
+        </div>
+        </div>
 		</form>
 		);
 	}

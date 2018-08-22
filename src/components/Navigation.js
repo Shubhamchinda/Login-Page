@@ -19,22 +19,19 @@ const NavigationAuth = () =>
   <Navbar default collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-          <Link to={routes.LANDING}>Landing</Link>
+          <Link to={routes.LANDING}>MAIN PAGE</Link>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
         <NavItem eventKey={1}>
-        <Link to={routes.LANDING}>LANDING</Link>
+        <Link to={routes.LANDING}>MAIN PAGE</Link>
         </NavItem>
         <NavItem eventKey={2}>
         <Link to={routes.HOME}>HOME</Link>
         </NavItem>
-        <NavItem eventKey={3}>
-        <Link to={routes.ACCOUNT}>ACCOUNT</Link>
-        </NavItem>
-        <NavItem eventKey={4} >
+        <NavItem eventKey={3} >
         <SignOutButton />
         </NavItem>
       </Nav>
@@ -46,14 +43,14 @@ const NavigationNonAuth = () =>
 <Navbar default collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
-        <Link to={routes.LANDING}>LANDING</Link>
+        <Link to={routes.LANDING}>MAIN PAGE</Link>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
     <Nav pullRight>
       <NavItem eventKey={1}>
-      <Link to={routes.LANDING}>LANDING</Link>
+      <Link to={routes.LANDING}>MAIN PAGE</Link>
       </NavItem>
       <NavItem eventKey={2}>
       <Link to={routes.SIGN_IN}>SIGN IN</Link>
