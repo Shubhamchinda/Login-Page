@@ -7,7 +7,7 @@ export const doCreateUserWithEmailAndPassword = (email, password) =>
 export const doSignInWithEmailAndPassword = (email, password) =>
 	auth.signInWithEmailAndPassword(email, password);
 //SignOut
-export const diSignOut = () =>
+export const doSignOut = () =>
 auth.signOut();
 
 // Password Reset
