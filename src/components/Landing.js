@@ -4,7 +4,7 @@ import './Landing.css';
 const LandingPage = () =>
 
   <div>
-    <Image src="photo.jpg" className="header-image" />
+    <Image src="photo.jpeg" className="header-image" />
   	<h3 className="text-center">WELCOME</h3>
   </div>
 
