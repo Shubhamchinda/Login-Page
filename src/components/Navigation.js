@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import AuthUserContext from './AuthUserContext';
 import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import { auth } from '../firebase';
+import { Navbar, Nav, NavItem, Image } from 'react-bootstrap'
 import './Navigation.css';
+import * as signinn from './SignIn.js';
 
 
 const Navigation = () =>
@@ -19,19 +21,18 @@ const NavigationAuth = () =>
   <Navbar default collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-          <Link to={routes.LANDING}>MAIN PAGE</Link>
+          <Link to={routes.LANDING}>
+          <Image src="http://www.logologo.com/logos/houses-logosa.png" />
+          </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
         <NavItem eventKey={1}>
-        <Link to={routes.LANDING}>MAIN PAGE</Link>
-        </NavItem>
-        <NavItem eventKey={2}>
         <Link to={routes.HOME}>HOME</Link>
         </NavItem>
-        <NavItem eventKey={3} >
+        <NavItem eventKey={2} >
         <SignOutButton />
         </NavItem>
       </Nav>
@@ -43,19 +44,14 @@ const NavigationNonAuth = () =>
 <Navbar default collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
-        <Link to={routes.LANDING}>MAIN PAGE</Link>
+        <Link to={routes.LANDING}>
+        <Image src="http://www.logologo.com/logos/houses-logosa.jpg" width="200" height="50" className="logo" />
+        </Link>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
-    <Nav pullRight>
-      <NavItem eventKey={1}>
-      <Link to={routes.LANDING}>MAIN PAGE</Link>
-      </NavItem>
-      <NavItem eventKey={2}>
-      <Link to={routes.SIGN_IN}>SIGN IN</Link>
-      </NavItem>
-    </Nav>
+        < signinn.SignInForm />
   </Navbar.Collapse>
 </Navbar>
 

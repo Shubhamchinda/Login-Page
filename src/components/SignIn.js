@@ -1,24 +1,15 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import { PasswordForgetLink } from './PasswordForget';
 import { SignUpLink } from './SignUp';
 import { auth } from '../firebase';
 import * as routes from '../constants/routes';
 import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import './signin.css';
 
 const SignInPage = ({ history }) =>
-  <div>
-  <Row className= "show-grid text-center" >
-    <h1>Sign In</h1>
-      <SignInForm history={history} />
-    <div>
-      <PasswordForgetLink />
-    </div>
-    <div>
-      <SignUpLink />
-    </div>
-    </Row>
-  </div>
+  <SignInForm history={history} />
 
 const byPropKey = (propertyName, value) => () => ({
   [propertyName]: value,
@@ -31,6 +22,7 @@ const INITIAL_STATE = {
 };
 
 class SignInForm extends Component {
+
   constructor(props) {
     super(props);
 
@@ -71,59 +63,40 @@ class SignInForm extends Component {
       email === '';
 
     return (
-      <div className="section">
-      <div className="container">
-      <div className="wrapper">
+      <div>
       <form onSubmit={this.onSubmit}>
-      <div class="row">
-      <div class="col-sm-4 col-sm-offset-4 person-wrapper">
-      <div className="form-group">
-        <Row className= "show-grid text-center">
-        <input className="form-control"
-          value={email}
-          onChange={event => this.setState(byPropKey('email', event.target.value))}
-          type="text"
-          placeholder="Email Address"
-        />
-          </Row>
-        </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4 person-wrapper">
-          <div className="form-group">
-        <Row className= "show-grid text-center">
-        <input className="form-control"
-          value={password}
-          onChange={event => this.setState(byPropKey('password', event.target.value))}
-          type="password"
-          placeholder="Password"
-        />
-        </Row>
-          </div>
-          </div>
-          </div>
-        <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 person-wrapper">
-        <div className="form-group">
-        <Row className= "show-grid text-center">
-        <button disabled={isInvalid} type="submit" className="btn btn-default hover">
+        <Nav pullRight >
+              <NavItem eventKey={1}>
+                <input className="form-control navvbar"
+                  value={email}
+                  onChange={event => this.setState(byPropKey('email', event.target.value))}
+                  type="text"
+                  placeholder="Email Address"
+                />
+            </NavItem>
+        <NavItem eventKey={2}>
+            <input className="form-control navvbar"
+            value={password}
+            onChange={event => this.setState(byPropKey('password', event.target.value))}
+            type="password"
+            placeholder="Password"
+            />
+        </NavItem>
+        <NavItem eventKey={3}>
+              <Button onClick={this.onSubmit} disabled={isInvalid} type="submit" className="btn btn-default hover" bsStyle="primary"
+              componentClass={Link} href="/home" to="/home">
           Sign In
-        </button>
-        </Row>
-        </div>
+          </Button>
+        </NavItem>
         { error && <p>{error.message}</p> }
-        </div>
-        </div>
-        </div>
-      </form>
-      </div>
-      </div>
-      </div>
+       </Nav>
+       </form>
+       </div>
     );
   }
 }
 
-export default withRouter(SignInPage);
+export default (SignInPage);
 
 export {
   SignInForm,

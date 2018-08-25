@@ -4,19 +4,14 @@ import {
   withRouter,
  } from 'react-router-dom';
  import { auth, db } from '../firebase';
- import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
+ import { Jumbotron, Grid, Row, Col, Button, Tooltip} from 'react-bootstrap';
 
 import * as routes from '../constants/routes';
+import './Signup.css';
 
 const SignUpPage = ({ history }) =>
-  <div>
-  <Row className= "show-grid text-center" >
-    <h1>SignUp</h1>
-    <div className="row">
+
     <SignUpForm history={history}/>
-    </div>
-    </Row>
-  </div>
 
 const INITIAL_STATE ={
 	usename:'',
@@ -83,9 +78,29 @@ class SignUpForm extends Component {
 			username === '' ;
 
 		return (
-		<form onSubmit={this.onSubmit}>
-    <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
+      <div className="section">
+      <div className="wrapper">
+      <form onSubmit={this.onSubmit}>
+    <div className="col-sm-8 col-sm-offset-2">
+      <h3 className="text-left num"><b>Number Of Users</b></h3>
+      <h4 className="text-left">175,232 and more..</h4>
+      <h1 className="text-center form-group"><b>JOIN US</b></h1>
+      <Row xs={12} sm={12}>
+      <Button bsStyle="primary" bsSize="large" block className="facebook form-group">
+      FACEBOOK
+      </Button>
+      <Button bsSize="large" block className="form-group goohle">
+      GOOGLE
+      </Button>
+      </Row>
+      <Row>
+        <Row>
+        <h3 className="text-center">OR</h3>
+        </Row>
+      </Row>
+
+    <div className="row">
+    <div className="col-xs-12 col-sm-12">
     <div className="form-group">
     <Row className= "show-grid text-center">
 		<input className="form-control"
@@ -98,8 +113,8 @@ class SignUpForm extends Component {
     </div>
     </div>
     </div>
-    <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
+    <div className="row">
+    <div className="col-xs-12 col-sm-12">
     <Row className= "show-grid text-center form-group">
 		<input className="form-control"
 			value={email}
@@ -111,7 +126,7 @@ class SignUpForm extends Component {
     </div>
     </div>
     <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
+    <div class="col-xs-12 col-sm-12">
     <Row className= "show-grid text-center form-group">
 		<input className="form-control"
           value={passwordOne}
@@ -123,7 +138,7 @@ class SignUpForm extends Component {
         </div>
         </div>
         <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-xs-12 col-sm-12">
         <Row className= "show-grid text-center form-group">
         <input className="form-control"
           value={passwordTwo}
@@ -135,17 +150,21 @@ class SignUpForm extends Component {
         </div>
         </div>
         <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-xs-12 col-sm-12">
         <Row className= "show-grid text-center form-group">
-        <button disabled={isInvalid} type="submit" className='btn btn-default hover'>
-          Sign Up
-        </button>
+        <Button disabled={isInvalid} type="submit" className='btn btn-default hover' block bsStyle="primary">
+          Submit
+        </Button>
         </Row>
 
         { error && <p>{error.message}</p> }
         </div>
         </div>
-		</form>
+
+      </div>
+      </form>
+      </div>
+      </div>
 		);
 	}
 }
