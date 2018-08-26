@@ -14,6 +14,15 @@
   background: #fff;
   box-shadow: 2px 2px 2px 2px #aaaaaa;
 }
+.footer{
+  min-height: 4em;
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 1px 1px #aaaaaa;
+}
+.cname{
+  margin-left: 1.5em;
+}
 .specials{
   display: inline-block;
   width:100%;

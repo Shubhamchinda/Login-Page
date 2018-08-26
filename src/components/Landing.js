@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import { Grid, Col, Image, Row, Tab, Tabs, Panel, ListGroup, ListGroupItem,Badge } from 'react-bootstrap';
+import { Grid,  Image, Row, Col, Tab, Tabs, Panel, ListGroup, ListGroupItem,Badge } from 'react-bootstrap';
 import './Landing.css';
 import { SignUpPage, INITIAL_STATE, byPropKey, SignUpForm} from './SignUp.js';
+
 
 export default class LandingPage extends Component{
   render() {
     return(
+      <div>
       <Grid>
       <Row className="show-grid">
       <div className="hidee">
@@ -73,9 +75,16 @@ export default class LandingPage extends Component{
       </Col>
 
     </Row>
-    <footer>
-    </footer>
   </Grid>
+    <div className="footer">
+      <footer>
+        <Col xs={12} sm={8} className="cname">
+          <Image src="http://www.logologo.com/logos/print-logo.jpg" width="200" height="50" />
+          
+          </Col>
+      </footer>
+      </div>
+  </div>
 
   );
 }
