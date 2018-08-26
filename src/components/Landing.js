@@ -13,15 +13,15 @@ export default class LandingPage extends Component{
       <div className="hidee">
       <Col xs={12} sm={8}>
         
-            <div >
+            <div>
         <Image src="https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg" alt="img" className="header-image img-fluid" />
         <h2 className="mainn">A Road is like a Movie,<br />This is a Sub Tagline</h2>
         </div>
         <br/><br/>
               <Col xs={12} sm={4} className="person-wrapper">
                 <Panel className="pannel">
-          <Panel.Heading>
-            <h4 className="text-center">USER 1</h4>
+          <Panel.Heading >
+            <h4 className="text-center backk">USER 1</h4>
           </Panel.Heading>
             <Panel.Body>
               <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
@@ -78,12 +78,26 @@ export default class LandingPage extends Component{
   </Grid>
     <div className="footer">
       <footer>
-        <Col xs={12} sm={8} className="cname">
-          <Image src="http://www.logologo.com/logos/print-logo.jpg" width="200" height="50" />
-          
+        <Row>
+          <Col xs={2} md={2}>
+            <Image src="http://www.logologo.com/logos/print-logo.jpg" width="200" height="50" />          
           </Col>
+          <Col xs={3} md={3}>
+            <h4><b>FAQs</b></h4>
+          </Col>
+          <Col xs={3} md={3}>
+            <h4><b>Contact Us</b></h4>
+          </Col>
+          <Col xs={3} md={2}>
+            <h4><b>About Us</b></h4>
+          </Col>
+          <Col xs={2} md={2}>
+            <h4><b>Terms</b></h4>
+          </Col>
+        </Row>
       </footer>
-      </div>
+    </div>
+      
   </div>
 
   );
