@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .hidee{
     visibility: hidden;
     clear: both;
@@ -73,7 +73,7 @@
 }
 .backk{
   color: black;
-  background: #666a72;
+  background-color:  #666a72;
 }
 .header-image {
 	width: 100%;

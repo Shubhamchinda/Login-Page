@@ -24,7 +24,7 @@ export default class LandingPage extends Component{
             <h4 className="text-center">USER 1</h4>
           </Panel.Heading>
             <Panel.Body>
-              <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
+              <Image src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
               <ListGroupItem className="itemm">Item 1</ListGroupItem>
@@ -37,7 +37,7 @@ export default class LandingPage extends Component{
             <h4 className="text-center">USER 2</h4>
           </Panel.Heading>
             <Panel.Body className="boddy">
-              <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
+              <Image src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
               <ListGroupItem className="itemm">Item 1</ListGroupItem>
@@ -50,7 +50,7 @@ export default class LandingPage extends Component{
             <h4 className="text-center">USER 3</h4>
           </Panel.Heading>
             <Panel.Body>
-              <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
+              <Image src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
               <ListGroupItem className="itemm">Item 1</ListGroupItem>
@@ -83,24 +83,24 @@ export default class LandingPage extends Component{
       <footer>
       <div className="container">
         <Row>
-          <Col xs={3} md={1}>
+          <Col xs={3} md={1} sm={1} >
             <Image src="https://image.ibb.co/gBdw7p/Screenshot_224.png" width="80" height="50" className="fimage" />
             </Col>
-          <Col md={3} className="filmy hidee">
+          <Col md={4} sm={2} className="filmy hidee">
             <h4><b>filmyprofile.com - 2018</b></h4>
           </Col>
-          <Col md={4} className="hidee">
+          <Col md={3} sm={1} className="hidee">
           </Col>
-          <Col xs={2} md={1}>
+          <Col xs={2} md={1} sm={1}>
             <h4><b>FAQs</b></h4>
           </Col>
-          <Col xs={2} md={1}>
+          <Col xs={2} md={1} sm={1}>
             <h4><b>Contact Us</b></h4>
           </Col>
-          <Col xs={2} md={1}>
+          <Col xs={2} md={1} sm={1}>
             <h4><b>About Us</b></h4>
           </Col>
-          <Col xs={2} md={1}>
+          <Col xs={2} md={1} sm={1}>
             <h4><b>Terms</b></h4>
           </Col>
         </Row>

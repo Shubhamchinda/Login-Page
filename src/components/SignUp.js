@@ -85,7 +85,7 @@ class SignUpForm extends Component {
 
       <h1 className="text-center form-group"><b>Join Us</b></h1>
       <Row xs={12} sm={12}>
-      <Button bsStyle="primary" bsSize="large" block className="facebook form-group">
+      <Button bsSize="large" block className="facebook form-group">
       <b>Facebook</b>
       </Button><br/><br/>
       <Button bsSize="large" block className="form-group goohle hover">
