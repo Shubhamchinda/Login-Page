@@ -106,7 +106,7 @@ class SignUpForm extends Component {
 			value = {username}
 			onChange = {event => this.setState(byPropKey('username',event.target.value))}
 			type="text"
-			placeholder = "Full Name"
+			placeholder = "Username"
 		/>
     </Row>
     </div>
@@ -152,7 +152,7 @@ class SignUpForm extends Component {
         <div class="col-xs-12 col-sm-12">
         <Row className= "show-grid text-center form-group">
         <Button type="submit" className='hover submitt' block>
-        Submit
+        <b>Submit</b>
         </Button>
         </Row>
 

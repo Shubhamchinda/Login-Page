@@ -23,6 +23,13 @@
   background: #fff;
   box-shadow: 2px 2px 2px 2px #aaaaaa;
 }
+.itemm{
+  background: #b8babc;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
 .footer{
   min-height: 4em;
   width: 100%;

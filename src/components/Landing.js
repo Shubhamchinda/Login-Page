@@ -27,8 +27,8 @@ export default class LandingPage extends Component{
               <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
-              <ListGroupItem>Item 1</ListGroupItem>
-              <ListGroupItem>Item 2</ListGroupItem>
+              <ListGroupItem className="itemm">Item 1</ListGroupItem>
+              <ListGroupItem className="itemm">Item 2</ListGroupItem>
             </ListGroup>
         </Panel>;</Col>
               <Col xs={12} sm={4} className="person-wrapper">
@@ -40,8 +40,8 @@ export default class LandingPage extends Component{
               <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
-              <ListGroupItem>Item 1</ListGroupItem>
-              <ListGroupItem>Item 2</ListGroupItem>
+              <ListGroupItem className="itemm">Item 1</ListGroupItem>
+              <ListGroupItem className="itemm">Item 2</ListGroupItem>
             </ListGroup>
         </Panel>;</Col>
               <Col xs={12} sm={4} className="person-wrapper">
@@ -53,8 +53,8 @@ export default class LandingPage extends Component{
               <Image src="https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
-              <ListGroupItem>Item 1</ListGroupItem>
-              <ListGroupItem>Item 2</ListGroupItem>
+              <ListGroupItem className="itemm">Item 1</ListGroupItem>
+              <ListGroupItem className="itemm">Item 2</ListGroupItem>
             </ListGroup>
         </Panel>;</Col>
 
