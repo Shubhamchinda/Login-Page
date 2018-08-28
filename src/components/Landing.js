@@ -16,9 +16,8 @@ export default class LandingPage extends Component{
             <div>
         <Image src="https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg" alt="img" className="header-image img-fluid" />
         <h2 className="mainn">A Road is like a Movie,<br />This is a Sub Tagline</h2>
-        </div>
-        <br/>
-              <Col xs={12} sm={4} className="person-wrapper">
+        </div><br/>
+          <Col xs={12} sm={4} className="person-wrapper">
                 <Panel className="pannel">
           <Panel.Heading className="backk">
             <h4 className="text-center">USER 1</h4>
@@ -27,8 +26,9 @@ export default class LandingPage extends Component{
               <Image src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
-              <ListGroupItem className="itemm">Item 1</ListGroupItem>
-              <ListGroupItem className="itemm">Item 2</ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem><br/>
             </ListGroup>
         </Panel>;</Col>
               <Col xs={12} sm={4} className="person-wrapper">
@@ -40,8 +40,9 @@ export default class LandingPage extends Component{
               <Image src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
-              <ListGroupItem className="itemm">Item 1</ListGroupItem>
-              <ListGroupItem className="itemm">Item 2</ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem><br/>
             </ListGroup>
         </Panel>;</Col>
               <Col xs={12} sm={4} className="person-wrapper">
@@ -53,17 +54,19 @@ export default class LandingPage extends Component{
               <Image src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
-              <ListGroupItem className="itemm">Item 1</ListGroupItem>
-              <ListGroupItem className="itemm">Item 2</ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem><br/>
             </ListGroup>
         </Panel>;</Col>
 
 
       </Col>
       </div>
-      <Col xs={12} sm={4} >
+      <Col xs={12} sm={4} c>
+      <div className="hidee">
       <h3 className="text-left num"><b>Number Of Users</b></h3>
-      <h4 className="text-left"><b>175,232</b><span className="more"> and more..</span></h4>
+      <h4 className="text-left"><b>175,232</b><span className="more"> and more..</span></h4></div>
       <div className="card">
         <SignUpForm/>
         </div>

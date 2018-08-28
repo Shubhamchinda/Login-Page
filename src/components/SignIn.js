@@ -83,13 +83,14 @@ class SignInForm extends Component {
             />
         </NavItem>
         <NavItem eventKey={3}>
-              <Button onClick={this.onSubmit}  type="submit" className="hover signinb"
+              <Button onClick={this.onSubmit} type="submit" className="signinb"
               componentClass={Link} href="/home" to="/home">
           Login
           </Button>
         </NavItem>
         { error && <p>{error.message}</p> }
        </Nav>
+
        </form>
        </div>
     );

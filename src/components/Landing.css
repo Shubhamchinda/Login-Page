@@ -24,11 +24,12 @@
   box-shadow: 2px 2px 2px 2px #aaaaaa;
 }
 .itemm{
-  background: #b8babc;
+  background: #d8d6d6;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+
 }
 .footer{
   min-height: 4em;
@@ -73,7 +74,7 @@
 }
 .backk{
   color: black;
-  background-color:  #666a72;
+  background: #666a72;
 }
 .header-image {
 	width: 100%;
