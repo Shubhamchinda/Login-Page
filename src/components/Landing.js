@@ -15,45 +15,50 @@ export default class LandingPage extends Component{
 
             <div>
         <Image src="https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg" alt="img" className="header-image img-fluid" />
-        <h2 className="mainn">A Road is like a Movie,<br />This is a Sub Tagline</h2>
-        </div><br/>
-          <Col xs={12} sm={4} className="person-wrapper">
+        <h2 className="mainn">A Road is like a Movie,<br /><i className="tagline">This is a Sub Tagline</i></h2>
+        </div>
+        <div className="user">
+        <Col xs={12} sm={4} className="person-wrapper backk">
+        <h4 className="text-center"><b>USER 1</b></h4>
+        </Col>
+        <Col xs={12} sm={4} className="person-wrapper backk">
+        <h4 className="text-center"><b>USER 2</b></h4>
+        </Col>
+        <Col xs={12} sm={4} className="person-wrapper backk">
+        <h4 className="text-center"><b>USER 3</b></h4>
+        </Col></div>
+        <br/><br/><br/>
+              <Col xs={12} sm={4} className="person-wrapper">
                 <Panel className="pannel">
-          <Panel.Heading className="backk">
-            <h4 className="text-center">USER 1</h4>
-          </Panel.Heading>
             <Panel.Body>
               <Image src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
               <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem><br/>
             </ListGroup>
         </Panel>;</Col>
               <Col xs={12} sm={4} className="person-wrapper">
                 <Panel className="pannel">
-          <Panel.Heading>
-            <h4 className="text-center">USER 2</h4>
-          </Panel.Heading>
             <Panel.Body className="boddy">
               <Image src="https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
               <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem>
+              <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem><br/>
             </ListGroup>
         </Panel>;</Col>
               <Col xs={12} sm={4} className="person-wrapper">
                 <Panel className="pannel">
-          <Panel.Heading>
-            <h4 className="text-center">USER 3</h4>
-          </Panel.Heading>
             <Panel.Body>
               <Image src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg" className="random img-thumbnail" />
             </Panel.Body>
               <ListGroup>
+              <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem>
               <ListGroupItem className="itemm"></ListGroupItem><br/>
