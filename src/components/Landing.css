@@ -8,6 +8,13 @@
     display: none;
   }
 }
+.fimage{
+  padding-left: 15px;
+}
+.more{
+  color:#65686d;
+  font-weight: 150000;
+}
 .card{
   display: inline-block;
   width: 100%;
@@ -20,6 +27,9 @@
   background: #fff;
   box-shadow: 1px 1px 1px 1px #aaaaaa;
 }
+.foot2{
+  width: 100%;
+}
 .cname{
   margin-left: 1.5em;
 }
@@ -31,7 +41,7 @@
   box-shadow: 2px 2px 2px 2px #aaaaaa;
 }
 .sps{
-  text-align: center; vertical-align: middle; line-height: 80px;
+  text-align: center; vertical-align: middle; line-height: 65px;
 }
 .pannel{
   background: #fff;

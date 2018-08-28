@@ -82,20 +82,19 @@ class SignUpForm extends Component {
       <div className="wrapper">
       <form onSubmit={this.onSubmit}>
     <div className="col-sm-8 col-sm-offset-2">
-      <h3 className="text-left num"><b>Number Of Users</b></h3>
-      <h4 className="text-left">175,232 and more..</h4>
+
       <h1 className="text-center form-group"><b>JOIN US</b></h1>
       <Row xs={12} sm={12}>
-      <Button bsStyle="primary" bsSize="large" block className="facebook form-group">
-      FACEBOOK
-      </Button><br/><br/>
+      <Button bsStyle="primary" bsSize="large" block className="facebook form-group hover">
+      <b>Facebook</b>
+      </Button><br/>
       <Button bsSize="large" block className="form-group goohle">
-      GOOGLE
+      <b>Google</b>
       </Button>
       </Row>
       <Row>
         <Row>
-        <h3 className="text-center">OR</h3><br/>
+        <h3 className="text-center">OR</h3>
         </Row>
       </Row>
 
@@ -152,13 +151,13 @@ class SignUpForm extends Component {
         <div class="row">
         <div class="col-xs-12 col-sm-12">
         <Row className= "show-grid text-center form-group">
-        <Button disabled={isInvalid} type="submit" className='btn btn-default hover submitt' block bsStyle="primary">
-          Submit
+        <Button type="submit" className='hover submitt' block>
+        Submit
         </Button>
         </Row>
 
         { error && <p>{error.message}</p> }
-        <br/>
+        
         </div>
         </div>
 

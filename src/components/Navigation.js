@@ -22,7 +22,7 @@ const NavigationAuth = () =>
     <Navbar.Header>
       <Navbar.Brand>
           <Link to={routes.LANDING}>
-          <Image src="http://www.logologo.com/logos/print-logo.jpg" width="200" height="50" />
+          <Image src="/images/logo.jpg" width="200" height="50" />
           </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
@@ -45,7 +45,7 @@ const NavigationNonAuth = () =>
   <Navbar.Header>
     <Navbar.Brand>
         <Link to={routes.LANDING}>
-        <Image src="http://www.logologo.com/logos/print-logo.jpg" width="200" height="50" className="logo" />
+        <Image src="https://image.ibb.co/fAAhf9/Screenshot_222.png" width="200" height="50" className="logo" />
         </Link>
     </Navbar.Brand>
     <Navbar.Toggle />
