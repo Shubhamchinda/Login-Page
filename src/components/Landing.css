@@ -25,10 +25,10 @@
 }
 .itemm{
   background: #b8babc;
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .footer{
   min-height: 4em;
@@ -84,11 +84,15 @@
 .pheight{
   max-height: 50px;
 }
-
+.Panel.Heading{
+  background: black;
+  background-color: black;
+}
 .random{
   width : 100%;
   height:15em;
   object-fit: cover;
+  padding: 2px 2px 2px 2px;
 }
 .container {
     position: relative;
@@ -106,4 +110,17 @@
 .formm {
 	width:100%;
 	margin-bottom: 2em;
+}
+@media screen and (max-width : 1920px){
+  .div-only-mobile{
+  visibility:hidden;
+  }
+}
+@media screen and (max-width : 906px){
+ .desk{
+  visibility:hidden;
+  }
+ .div-only-mobile{
+  visibility:visible;
+  }
 }
